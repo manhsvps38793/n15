@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="trang=giohang" method="post">
+        <div class="grid__item one-half cart_select">
+            <div class="" style="display: flex;justify-content:space-between;gap:10px;   ">
+                <button type="submit"
+                    class="ajaxcart__qty-adjust ajaxcart__qty--minus items-count"
+                    data-id="" data-qty="0" data-line="1"
+                    aria-label="-" name="minus"> -
+                </button>
+                <input type="number" readonly name="quantity-product" class="ajaxcart__qty-num number-sidebar" value="' . $b['sl'] . '">
+                
+                <button type="submit"
+                    class="ajaxcart__qty-adjust ajaxcart__qty--plus items-count"
+                    data-id="" data-line="1" data-qty="2"
+                    aria-label="+" name="plus"> +
+                </button>
+            </div>
+        </div>
+        <input type="hidden" name="product_id" value="' . $b['id'] . '">
+    </form>
+    <script>alert("Số lượng sản phẩm phải lớn hơn 1")</script>
+</body>
+</html>
