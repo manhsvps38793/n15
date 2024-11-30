@@ -1,0 +1,266 @@
+body {
+    background-color: #fff !important;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #141920;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #ecf0f1;
+    padding-top: 20px;
+}
+
+.sidebar img {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.sidebar ul li:hover,
+.sidebar ul li.active {
+    background-color: #1a82f1;
+    color: #fff;
+}
+
+.sidebar ul li i {
+    margin-right: 10px;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #ddd;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.header .buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.header .buttons button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.header .buttons .login {
+    background-color: #0099ff;
+    color: #fff;
+}
+
+.header .buttons .logout {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.table-container {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+.action-buttons button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.action-buttons .edit {
+    background-color: #0a6fd5;
+    color: #fff;
+    border-radius: .2rem;
+}
+
+.action-buttons .delete {
+    background-color: #ef3723;
+    color: #fff;
+    border-radius: .2rem;
+
+}
+
+.add-account-container {
+    margin-top: 20px;
+}
+
+.add-account-container button {
+    padding: 10px 20px;
+    background-color: #20252C;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-account-container button:hover {
+    background-color: #1a82f1;
+}
+
+.sudes-header-account:before {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 0px;
+    bottom: 0;
+    width: 100%;
+    height: 10px;
+    z-index: 1;
+}
+
+.sudes-header-account {
+    display: inline-block;
+    position: relative;
+    transition: color 0.2s ease-in-out;
+}
+
+.sudes-header-account:hover ul {
+    position: absolute;
+    border: 1px solid #efefef;
+    background: #fff;
+    width: auto;
+    min-width: 125px;
+    z-index: 15;
+    list-style: none;
+    margin: 0px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 6px 12px 0px;
+    top: calc(100% + 10px);
+    right: -15px;
+    text-align: left;
+    display: block;
+    width: 210px;
+    background-color: #fff;
+    box-shadow: 2px 4px 9px rgba(0, 0, 0, 0.329);
+    gap: 4px;
+}
+
+.sudes-header-account>a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    color: #000000;
+    text-decoration: none;
+}
+
+.sudes-header-account>a .box-icon svg {
+    width: 28px;
+    height: 28px;
+    position: relative;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+.sudes-header-account>a .box-icon {
+    text-align: center;
+}
+
+.sudes-header-account>a>svg {
+    width: 10px;
+    height: 10px;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 12px;
+    right: 0px;
+}
+
+.sudes-header-account>a .item-title {
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+.sudes-header-account ul li {
+    padding: 5px 5px;
+    transition: background 0.5s;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.sudes-header-account ul {
+    position: absolute;
+    border: 1px solid #efefef;
+    background: #fff;
+    width: auto;
+    min-width: 125px;
+    z-index: 15;
+    list-style: none;
+    margin: 0px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 6px 12px 0px;
+    top: calc(100% + 15px);
+    right: -15px;
+    text-align: left;
+    display: none;
+    width: 210px;
+    background-color: #fff;
+    box-shadow: 2px 4px 9px rgba(0, 0, 0, 0.329);
+    gap: 4px;
+}
+.sudes-header-account ul li:hover {
+    background-color: var(--mainColor);
+}
+
+.sudes-header-account ul li:hover a {
+    color: #fff;
+}
+
+.sudes-header-account ul li a svg {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}

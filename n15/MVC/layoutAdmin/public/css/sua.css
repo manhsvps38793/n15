@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#giao-dien-admin {
+    display: flex;
+    width: 100%;
+}
+
+#menu-ben-trai {
+    background-color: #171917;
+    color: #ecf0f1;
+    width: 20%;
+    padding: 20px 10px;
+    height: auto;
+}
+#menu-ben-trai #logo{
+    width: 90%;
+    margin: auto;
+}
+#menu-ben-trai #logo img{
+    max-width: 100%;
+    padding-bottom: 20px;
+}
+
+/* #logo{
+    margin: 0;
+} */
+#menu-chuc-nang .chuc-nang{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    font-size: 17px;
+    cursor: pointer;
+}
+#menu-chuc-nang .chuc-nang img{
+    width: 20px;
+    height: 20px;
+    padding-left: 40px;
+}
+#menu-chuc-nang #active{
+    background-color: #2980b9;
+}
+#menu-chuc-nang .chuc-nang a{
+    text-decoration: none;
+    color: white;
+    padding-left: 20px;
+
+}
+
+
+
+/* #menu-chuc-nang li {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    cursor: pointer;
+}
+#menu-chuc-nang li img{
+    width: 10px;
+    height: 10px;
+}
+#menu-chuc-nang li a{
+    text-decoration: none;
+    color: #fff;
+    margin: 16px 60px;
+}
+
+#menu-chuc-nang ul #chon {
+    background-color: #2980b9;
+    
+} */
+
+#noi-dung-chinh {
+    width: 80%;
+    padding: 20px;
+}
+
+#tieu-de-trang {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#tieu-de-trang h1 {
+    margin: 0;
+}
+
+#tai-khoan {
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 0px;
+}
+#tai-khoan .hinh{
+    width: 30px;
+    padding: 0px 50px;
+}
+#tai-khoan .hinh img{
+    max-width: 100%;
+    
+}
+/* Đặt form ra giữa màn hình */
+.sua {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#form-sua {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+}
+
+#formsua h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#formsua input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#formsua button {
+    width: 38%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px 1%;
+}
+
+#formsua button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#formsua button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+#formsua button[type="button"] {
+    background-color: #f44336;
+    color: white;
+}
+
+#formsua button[type="button"]:hover {
+    background-color: #d32f2f;
+}
